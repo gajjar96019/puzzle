@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from "react";
 
 function App() {
+
+  const [val, setval] = useState([])
+
+  const btnhandle = () => {
+    
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='ms-auto'>
+
+        <input type="button" value="1" onClick={btnhandle} />
+        <input type="button" value="2" onClick={btnhandle} />
+        <input type="button" value="3" onClick={btnhandle} />
+
+        <br />
+
+        <input type="button" value="4" onClick={btnhandle} />
+        <input type="button" value="5" onClick={btnhandle} />
+        <input type="button" value="6" onClick={btnhandle} />
+
+        <br />
+
+        <input type="button" value="7" onClick={btnhandle} />
+        <input type="button" value=" " onClick={btnhandle} />
+        <input type="button" value="9" onClick={btnhandle} />
+
+      </div>
     </div>
   );
 }
